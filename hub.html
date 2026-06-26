@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hub — RetroPi Games</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hub.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="pi-btn small" style="text-decoration:none;">← Menu</a>
+    <div class="currency-bar">
+      <span class="cur">🪙 <span id="hubCoins">0</span></span>
+      <span class="cur">💎 <span id="hubGems">0</span></span>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="shop">🛍️ Boutique</button>
+    <button class="tab-btn" data-tab="missions">🎯 Missions</button>
+    <button class="tab-btn" data-tab="talents">⬆️ Talents</button>
+    <button class="tab-btn" data-tab="leaderboard">🏆 Classement</button>
+  </nav>
+
+  <!-- BOUTIQUE -->
+  <section id="tab-shop" class="tab-panel active">
+    <div class="rarity-tabs">
+      <button class="rarity-btn active" data-rarity="commun">Commun</button>
+      <button class="rarity-btn" data-rarity="rare">Rare</button>
+      <button class="rarity-btn" data-rarity="epique">Épique</button>
+      <button class="rarity-btn" data-rarity="legende">Légende</button>
+    </div>
+    <div id="skinGrid" class="skin-grid"></div>
+  </section>
+
+  <!-- MISSIONS -->
+  <section id="tab-missions" class="tab-panel">
+    <div class="daily-card">
+      <h3>🎁 Récompense quotidienne</h3>
+      <p id="dailyStatus">Jour <span id="dailyDay">1</span></p>
+      <button id="dailyClaimBtn" class="pi-btn">Réclamer</button>
+    </div>
+    <div id="missionList" class="mission-list"></div>
+  </section>
+
+  <!-- TALENTS -->
+  <section id="tab-talents" class="tab-panel">
+    <div id="talentList" class="talent-list"></div>
+  </section>
+
+  <!-- CLASSEMENT -->
+  <section id="tab-leaderboard" class="tab-panel">
+    <div class="lb-info">
+      <p>🏆 Classement local — basé sur ta meilleure taille atteinte</p>
+    </div>
+    <div id="leaderboardList" class="leaderboard-list"></div>
+  </section>
+
+  <script src="hub.js"></script>
+</body>
+</html>

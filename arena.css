@@ -1,0 +1,112 @@
+html, body { overflow: hidden; height: 100%; }
+
+#arenaCanvas {
+  display: block;
+  background: #0d0221;
+  touch-action: none;
+}
+
+.hud {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  z-index: 10;
+  gap: 10px;
+}
+
+.pi-btn.small {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal.hidden { display: none; }
+
+.modal-box {
+  background: #1a0533;
+  border: 2px solid #ff2e63;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.modal-box h2 { color: #ff2e63; margin-bottom: 10px; }
+.modal-box p { margin-bottom: 12px; }
+
+.start-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#previewCanvas {
+  background: #0d0221;
+  border: 2px solid #2dd4bf;
+  border-radius: 8px;
+}
+
+.skin-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skin-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.skin-dot.selected {
+  border-color: #fff;
+  box-shadow: 0 0 8px #fff;
+}
+
+#nameInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2dd4bf;
+  background: #0d0221;
+  color: #fff;
+  font-family: inherit;
+  text-align: center;
+}
+
+.stats-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.stat-box {
+  background: #0d0221;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #aaa;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RetroPi Games</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>🕹️ RetroPi Games</h1>
+    <a href="hub.html" class="pi-btn small" style="text-decoration:none;">🛍️ Hub</a>
+    <button id="loginBtn" class="pi-btn">Se connecter avec Pi</button>
+    <span id="userTag" class="user-tag" style="display:none;"></span>
+  </header>
+
+  <main class="menu">
+    <h2>Choisis ton jeu</h2>
+    <div class="game-grid">
+      <a href="snake.html" class="game-card">
+        <div class="game-icon">🐍</div>
+        <div class="game-name">Snake</div>
+      </a>
+      <a href="arena.html" class="game-card">
+        <div class="game-icon">🌀</div>
+        <div class="game-name">Snake Arena</div>
+      </a>
+      <div class="game-card disabled">
+        <div class="game-icon">🧱</div>
+        <div class="game-name">Casse-briques</div>
+        <div class="soon">Bientôt</div>
+      </div>
+      <div class="game-card disabled">
+        <div class="game-icon">🏃</div>
+        <div class="game-name">Runner</div>
+        <div class="soon">Bientôt</div>
+      </div>
+      <div class="game-card disabled">
+        <div class="game-icon">🧩</div>
+        <div class="game-name">Puzzle</div>
+        <div class="soon">Bientôt</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>RetroPi Games — Propulsé par Pi Network</p>
+  </footer>
+
+  <script src="pi-auth.js"></script>
+</body>
+</html>

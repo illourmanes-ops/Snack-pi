@@ -1,0 +1,60 @@
+.game-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#gameCanvas {
+  background: #1a0533;
+  border: 3px solid #2dd4bf;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+  max-width: 100%;
+}
+
+.controls-mobile {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls-mobile .row {
+  display: flex;
+  gap: 8px;
+}
+
+.controls-mobile button {
+  width: 56px;
+  height: 56px;
+  font-size: 1.4rem;
+  background: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden { display: none; }
+
+.modal-box {
+  background: #1a0533;
+  border: 2px solid #ff2e63;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+}
+
+.modal-box h2 { color: #ff2e63; margin-bottom: 10px; }
+.modal-box p { margin-bottom: 18px; font-size: 1.2rem; }

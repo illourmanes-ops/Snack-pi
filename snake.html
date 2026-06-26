@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake — RetroPi Games</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="pi-btn" style="text-decoration:none;">← Menu</a>
+    <h1>🐍 Snake</h1>
+    <span id="scoreTag" class="user-tag">Score: 0</span>
+  </header>
+
+  <main class="game-wrap">
+    <canvas id="gameCanvas" width="320" height="320"></canvas>
+
+    <div class="controls-mobile">
+      <button id="up">↑</button>
+      <div class="row">
+        <button id="left">←</button>
+        <button id="down">↓</button>
+        <button id="right">→</button>
+      </div>
+    </div>
+
+    <button id="restartBtn" class="pi-btn" style="margin-top:16px;">Rejouer</button>
+  </main>
+
+  <div id="gameOverModal" class="modal hidden">
+    <div class="modal-box">
+      <h2>Game Over</h2>
+      <p id="finalScore">Score : 0</p>
+      <button id="modalRestart" class="pi-btn">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Snake Arena — RetroPi Games</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="arena.css">
+</head>
+<body>
+
+  <div id="hud" class="hud">
+    <a href="index.html" class="pi-btn small">← Menu</a>
+    <span id="coinsTag" class="user-tag">🪙 0</span>
+    <span id="lengthTag" class="user-tag">Taille: 1</span>
+  </div>
+
+  <canvas id="arenaCanvas"></canvas>
+
+  <div id="startScreen" class="modal">
+    <div class="modal-box start-box">
+      <h2>🐍 Snake Arena</h2>
+
+      <canvas id="previewCanvas" width="140" height="60"></canvas>
+
+      <div class="skin-row" id="skinRow"></div>
+
+      <input id="nameInput" type="text" placeholder="Ton pseudo" maxlength="12">
+
+      <div class="stats-row">
+        <div class="stat-box">🪙 <span id="statCoins">0</span></div>
+        <div class="stat-box">🏆 <span id="statBest">0</span></div>
+        <div class="stat-box">⚡ <span id="statSpeed">Normal</span></div>
+      </div>
+
+      <p class="hint">Mange, grossis, évite les autres serpents !</p>
+      <button id="startBtn" class="pi-btn">Jouer</button>
+      <a href="hub.html" class="pi-btn small" style="text-decoration:none; display:inline-block; margin-top:8px;">🛍️ Boutique / Missions / Talents</a>
+    </div>
+  </div>
+
+  <div id="gameOverModal" class="modal hidden">
+    <div class="modal-box">
+      <h2>Game Over</h2>
+      <p id="finalScore">Score : 0</p>
+      <p id="coinsEarned">Pièces gagnées : 0</p>
+      <button id="restartBtn" class="pi-btn">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="arena.js"></script>
+</body>
+</html>
